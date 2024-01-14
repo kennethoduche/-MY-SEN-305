@@ -1,0 +1,148 @@
+/* Reset some default styles */
+Body, h1, h2, p, ul, li {
+  Margin: 0;
+  Padding: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+
+
+}
+
+.showcase{
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  z-index: 1000;
+  font-size: 500;
+}
+
+.showcase header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 1000x;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url('horse.jpg');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+
+}
+
+.toggle.active{
+  background: url('close.jpg');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+}
+
+.showcase img{
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   opacity: 0.8;
+}
+
+.logo{
+  text-transform: uppercase;
+  cursor: pointer;
+  color: darkslategrey;
+  letter-spacing: 2.5px;
+  font-size: 5.1em;
+  padding: 10px 500px;
+  bottom: 500px;
+}
+
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #03a9f4
+}
+
+
+
+ .text {
+  position: relative;
+  z-index: 10;
+ }
+ 
+ .text h1{
+  font-size: 5em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+ }
+    
+ .text h2{
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+ }
+
+
+.text p{
+   font-size: 1.1em;
+   margin: 20px 0;
+   font-weight: 400;
+   max-width: 700px;
+}
+
+
+.text a {
+    display: inline-block;
+   letter-spacing: 2.5px;
+    background: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #111;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.text a:hover {
+    letter-spacing: 4px;
+}
+
+.social {
+  position: absolute;
+  bottom: 500px;
+  z-index: 10;
+  justify-content: right;
+  align-items: center;
+  width: 50px;
+  height: 70px;
+  padding: 10px 1100px;
+  justify-content: space-between;
+  cursor: pointer;
+  letter-spacing: 2.5px;
+}
